@@ -1,0 +1,5 @@
+usage:
+
+gcc CCAdder_N-bit_sim.c -o CCAdder
+./CCAdder
+
