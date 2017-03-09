@@ -1,5 +1,6 @@
 usage:
-
+Compile:
 gcc CCAdder_N-bit_sim.c -o CCAdder
-./CCAdder
+Run:
+./adderSim
 

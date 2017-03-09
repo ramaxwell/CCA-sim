@@ -297,13 +297,17 @@ int main(void){
 	}//END FOR LOOP (Each Set of number of bits)
 
 
-	// Output File b
-	FILE *fp;								//save average delay to file for 
-	fp=fopen("run.txt", "w");				//input into spreadsheet for graphing
-	
+	FILE *fp;									//save average delay to file for 
+	fp=fopen("run.txt", "w");					//input into spreadsheet for graphing
+	fprintf(fp, "# Bits Added \t\t Avg Delay *\n");
+	fprintf(fp, "------------------------------------------\n");
+
 	for(i = 0; i < MAX_BITS; i++){
-		fprintf(fp, "%.3f\n", avgDelay[i]);
+		fprintf(fp, "\t %i \t\t\t\t  %.3f\n", i+1, avgDelay[i]);
 	}
+	
+	fprintf(fp, "------------------------------------------\n");
+	fprintf(fp, "* Number of runs per bit set: %i", MAX_RUNS);
 	fclose(fp);
 
 
