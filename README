@@ -2,7 +2,7 @@
 
 Files included in this repo
 
---> usage.txt : 			example of how to run and compile the program
---> CCAdder_N-bit_sim.c : 	Simulation source
---> run-sample.txt :		Sample output file
---> Project1-CCA-Robert-Maxwell.docx : Project report
+--> usage.txt :           example of how to run and compile the program
+--> CCAdder_N-bit_sim.c : Simulation source
+--> adderSim:             Binary compiled with gcc with default options
+--> run.txt :             Sample output file
